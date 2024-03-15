@@ -18,7 +18,6 @@ class _HomePageState extends State<HomePage> {
   List<String> locations = [
     'Location 1 (10.9916, 76.0103)',
     'Location 2 (11.0023, 76.3421)',
-    
   ];
   ShopData shopData = ShopData(
     customerId: 0,
@@ -161,9 +160,15 @@ class _HomePageState extends State<HomePage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
-                                  backgroundImage: AssetImage('lib/images/delvry.png'),
-                                  radius: 25),
-                                Text(category,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                                    backgroundImage:
+                                        AssetImage('lib/images/delvry.png'),
+                                    radius: 25),
+                                Text(
+                                  category,
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
                                 GestureDetector(
                                   onTap: () => _goToShopListPage(category),
                                   child: Icon(Icons.arrow_forward_ios),
@@ -179,10 +184,10 @@ class _HomePageState extends State<HomePage> {
                     },
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 50),
-                  child: ImageSlider(),
-                ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 50),
+                child: ImageSlider(),
+              ),
             ],
           ),
         ),

@@ -16,6 +16,8 @@ class Merchant {
       categories: List<String>.from(json['categories']),
     );
   }
+
+  get id => null;
 }
 
 class ShopData {
