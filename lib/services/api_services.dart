@@ -12,7 +12,7 @@ class ApiServices {
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
-      final List dishesJson = data['meals']; // "meals" not "results"
+      final List dishesJson = data['meals'];
       return dishesJson.map((json) => Dishes.fromJson(json)).toList();
     } else {
       throw Exception('Failed to load dishes');
