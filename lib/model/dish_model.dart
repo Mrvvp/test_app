@@ -5,7 +5,7 @@ class Dishes {
 
   Dishes({required this.id, required this.title, required this.image});
 
-  // Factory constructor to create Dishes from JSON
+
   factory Dishes.fromJson(Map<String, dynamic> json) {
     return Dishes(
       id: json['idMeal'] ?? '',
